@@ -5,7 +5,7 @@ type LayoutProps = {
 
 export default function Layout({ children, modal }: LayoutProps) {
   return (
-    <div>
+    <div className="w-full h-full">
       {children}
       {modal}
     </div>

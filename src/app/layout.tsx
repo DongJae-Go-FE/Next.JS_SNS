@@ -21,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="ko" className={pretendard.className}>
       <body>
-        <div className="relative w-full h-full bg-white">{children}</div>
+        <div className="relative w-[100dvw] h-[100dvh] bg-white">
+          {children}
+        </div>
       </body>
     </html>
   );

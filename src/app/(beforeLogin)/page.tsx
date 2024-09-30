@@ -1,19 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../page.module.css";
-
 export default function Home() {
   return (
-    <div>
-      <div className={styles.left}>
+    <div className="flex items-center w-full h-full justify-center">
+      <div className="w-1/2">
         <Image src="" alt="로고" />
       </div>
-      <div className={styles.right}>
+      <div className="w-1/2">
         <h1>지금 일어나고 있는 일</h1>
         <p>지금 가입하세요</p>
-        <Link href="/i/flow/signup">회원가입</Link>
-        <Link href="/i/flow/login">로그인</Link>
+        <div className="flex gap-x-2">
+          <Link href="/i/flow/signup" className="inline-flex items-center h-9">
+            회원가입
+          </Link>
+          <Link href="/login" className="inline-flex items-center h-9">
+            로그인
+          </Link>
+        </div>
       </div>
     </div>
   );
