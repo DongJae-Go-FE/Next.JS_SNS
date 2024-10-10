@@ -9,7 +9,7 @@ export default function Login() {
   router.replace("/i/flow/login");
   return (
     <div className="flex items-center w-full h-full justify-center">
-      <div className="w-1/2">
+      <div className="w-1/2 h-[500px] bg-gray-400">
         <Image src="" alt="로고" />
       </div>
       <div className="w-1/2">
