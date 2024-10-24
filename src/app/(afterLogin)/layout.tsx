@@ -8,8 +8,10 @@ import Follower from "../components/Follower/Follower";
 
 export default async function AfterLoginLayout({
   children,
+  modal,
 }: {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }) {
   return (
     <div className={style.layoutContainer}>
@@ -34,6 +36,7 @@ export default async function AfterLoginLayout({
           <Follower />
         </div>
       </div>
+      {modal}
     </div>
   );
 }

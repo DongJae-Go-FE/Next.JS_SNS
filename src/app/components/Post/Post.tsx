@@ -11,7 +11,7 @@ dayjs.locale("ko");
 
 const Post = () => {
   return (
-    <article>
+    <article className="border-b px-3">
       <h3>
         <Link href="">사람</Link>
       </h3>
@@ -24,6 +24,17 @@ const Post = () => {
       <Link href="">
         <p>콘텐츠</p>
       </Link>
+      <ul className="flex gap-x-2">
+        <li>
+          <button>댓글 버튼 수</button>
+        </li>
+        <li>
+          <button>리포스트 버튼 수</button>
+        </li>
+        <li>
+          <button>좋아요 버튼 수</button>
+        </li>
+      </ul>
     </article>
   );
 };
