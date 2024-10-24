@@ -2,7 +2,7 @@
 import Style from "./style.module.css";
 import { useRouter } from "next/navigation";
 
-export default function Modal() {
+export default function LoginModal() {
   const router = useRouter();
   const onClickClose = () => {
     router.back();
