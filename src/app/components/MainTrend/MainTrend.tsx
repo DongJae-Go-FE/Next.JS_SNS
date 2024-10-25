@@ -1,15 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import style from "./style.module.css";
 
-const Trend = () => {
-  const pathName = usePathname();
-
-  if (pathName === "/explore") return null;
-
+const MainTrend = () => {
   return (
     <div>
       <h2 className={style.trendTitle}>나를 위한 트렌트</h2>
@@ -26,4 +21,4 @@ const Trend = () => {
   );
 };
 
-export default Trend;
+export default MainTrend;

@@ -1,0 +1,41 @@
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: violet;
+}
+
+.tabTitle {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tabList {
+  display: flex;
+  gap: 0 8px;
+}
+
+.tabItem {
+  flex: 1;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tabBtn {
+  width: 100%;
+  display: block;
+}
+
+.tabIndi {
+  width: 20px;
+  height: 2px;
+  background-color: blue;
+
+  display: block;
+  margin: 0 auto;
+}

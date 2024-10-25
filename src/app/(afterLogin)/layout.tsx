@@ -5,6 +5,8 @@ import NavMenu from "../components/NavMenu/NavMenu";
 import LogoutBtn from "../components/LogoutBtn/LogoutBtn";
 import Trend from "../components/Trend/Trend";
 import Follower from "../components/Follower/Follower";
+import LeftSearch from "../components/LeftSearch/LeftSearch";
+import Filter from "../components/Filter/Filter";
 
 export default async function AfterLoginLayout({
   children,
@@ -31,9 +33,10 @@ export default async function AfterLoginLayout({
         </div>
         <div className={style.content}>{children}</div>
         <div className={style.layoutRight}>
-          <input type="text" placeholder="검색" className="input" />
+          <LeftSearch />
           <Trend />
           <Follower />
+          <Filter />
         </div>
       </div>
       {modal}
