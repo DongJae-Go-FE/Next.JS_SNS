@@ -2,7 +2,7 @@
 
 import { ChangeEventHandler, FormEventHandler, useRef, useState } from "react";
 
-const PostForm = () => {
+const ArticlePostForm = () => {
   const imgRef = useRef<HTMLInputElement>(null);
 
   const [contnet, setContent] = useState("");
@@ -31,4 +31,4 @@ const PostForm = () => {
   );
 };
 
-export default PostForm;
+export default ArticlePostForm;

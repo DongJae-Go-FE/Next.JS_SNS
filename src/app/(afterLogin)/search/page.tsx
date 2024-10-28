@@ -2,6 +2,7 @@ import BackButton from "@/app/components/BackButton/BackButton";
 import ExTab from "./_components/ExTab/ExTab";
 import ExTabProvider from "./_components/ExTab/ExTabProvider";
 import MainSearch from "@/app/components/MainSearch/MainSearch";
+import PostArticle from "@/app/components/PostArticle/PostArticle";
 
 type Props = {
   searchParams: {
@@ -21,6 +22,7 @@ export default function page({ searchParams }: Props) {
       <ExTabProvider>
         <ExTab />
         <MainSearch q={searchParams.q} />
+        <PostArticle />
       </ExTabProvider>
     </div>
   );

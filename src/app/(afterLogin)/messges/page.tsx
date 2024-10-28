@@ -1,3 +1,9 @@
+import Room from "./_components/Room";
+
 export default function page() {
-  return <div>테스트</div>;
+  return (
+    <div>
+      <Room />
+    </div>
+  );
 }

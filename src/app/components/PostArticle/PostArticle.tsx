@@ -1,28 +1,32 @@
-"use clinet";
+"use client";
 
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import "dayjs/locale/ko";
-import { faker } from "@faker-js/faker";
 
 dayjs.extend(relativeTime);
 dayjs.locale("ko");
 
-const Post = () => {
-  const data = {
-    images: [{ id: "1", src: faker.image.urlLoremFlickr() }],
-  };
+const PostArticle = () => {
+  const { push } = useRouter();
 
   return (
-    <article className="border-b px-3">
+    <article
+      className="border-b px-3"
+      onClickCapture={() => {
+        push(`/${1}/status/${1}`);
+      }}
+    >
       <h3>
-        <Link href="">사람</Link>
+        <Link href={`/${1}`}>사람</Link>
       </h3>
       <p>타이틀</p>
-      <Link href={`/${1}/status/${1}/photo/${data.images[0].id}`}>
-        <Image src={data.images[0].src} width={500} height={500} alt="" />
+      <Link href="">
+        <Image src="" width={100} height={100} alt="" />
       </Link>
       <p>{dayjs("2024.10.24").fromNow(true)}전</p>
 
@@ -44,4 +48,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default PostArticle;

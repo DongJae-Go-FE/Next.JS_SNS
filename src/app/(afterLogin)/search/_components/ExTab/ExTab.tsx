@@ -34,7 +34,7 @@ const ExTab = () => {
             className={style.tabBtn}
             onClick={() => {
               setTab("fol");
-              replace(`/search?q=${searchParms.toString()}&f-live`);
+              replace(`/search?q=${searchParms.get("q") || ""}&f-live`);
             }}
           >
             팔로우중
