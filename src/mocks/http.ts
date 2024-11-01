@@ -4,16 +4,15 @@ import cors from "cors";
 import { handlers } from "./handlers";
 
 const app = express();
-const port: 9090 = 9090;
+const port = 9091;
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "http://localhost:9090",
     optionsSuccessStatus: 200,
     credentials: true,
   })
 );
 app.use(express.json());
 app.use(createMiddleware(...handlers));
-
-app.listen(port, () => console.log(`mock server ${port}`));
+app.listen(port, () => console.log(`Mock server is running on port: ${port}`));

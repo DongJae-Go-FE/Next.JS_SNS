@@ -4,9 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex items-center w-full h-full justify-center">
-      <div className="w-1/2 h-[500px] bg-gray-400">
-        <Image src="" alt="로고" />
-      </div>
+      <div className="w-1/2 h-[500px] bg-gray-400"></div>
       <div className="w-1/2">
         <h1>지금 일어나고 있는 일</h1>
         <p>지금 가입하세요</p>

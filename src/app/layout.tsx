@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { MSWComponent } from "./components/MSWComponent";
 
 export const pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="ko" className={pretendard.className}>
       <body>
         <div className="relative w-[100dvw] h-[100dvh] bg-white">
+          <MSWComponent />
           {children}
         </div>
       </body>
